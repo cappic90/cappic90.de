@@ -3,8 +3,8 @@ const links = [
 	{ id: 'twitter', href: 'https://twitter.com/cappic90', label: 'Twitter' },
 	{ id: 'github', href: 'https://github.com/cappic90', label: 'GitHub' },
 	{ id: 'xing', href: 'https://www.xing.com/profile/Malik_Dirim/cv', label: 'Xing' },
+	{ id: 'linkedin', href: 'https:/www.linkedin.com/in/cappic90', label: 'LinkedIn' },
 ]
-
 </script>
 
 <template>
