@@ -9,7 +9,7 @@ const links = [
 
 <template>
   <NuxtLayout>
-	<div class="container mx-auto flex-1">
+	<div class="container mx-auto flex-1 p-2">
 		<h1 class="mb-4">Cappic90</h1>
 		<p class="mb-2">Hey 👋, this is Malik from Germany ✌️. I currently work as a full stack web developer 👨‍💻. Here are some links to find out more about me and get in touch:</p>
 		<ul class="mb-2">
