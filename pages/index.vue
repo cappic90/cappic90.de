@@ -1,23 +1,27 @@
 <script setup lang="ts">
-const links = [
-	{ id: 'twitter', href: 'https://twitter.com/cappic90', label: 'Twitter' },
-	{ id: 'github', href: 'https://github.com/cappic90', label: 'GitHub' },
-	{ id: 'xing', href: 'https://www.xing.com/profile/Malik_Dirim/cv', label: 'Xing' },
-	{ id: 'linkedin', href: 'https:/www.linkedin.com/in/cappic90', label: 'LinkedIn' },
+import { Link } from '@/components/CLink.vue';
+
+const links: Link[] = [
+	{ href: 'https://twitter.com/cappic90', label: 'Twitter' },
+	{ href: 'https://github.com/cappic90', label: 'GitHub' },
+	{ href: 'https://www.xing.com/profile/Malik_Dirim/cv', label: 'Xing' },
+	{ href: 'https:/www.linkedin.com/in/cappic90', label: 'LinkedIn' },
 ]
 </script>
 
 <template>
-  <NuxtLayout>
-	<main class="container mx-auto flex-1 p-2">
-		<h1 class="mb-4">Cappic90</h1>
-		<p class="mb-2">Hey 👋, this is Malik from Germany ✌️. I currently work as a full stack web developer 👨‍💻. Here are some links to find out more about me and get in touch:</p>
-		<ul class="mb-2">
-			<li v-for="link in links" :key="link.id">
-				<a :href="link.href" target="_blank" rel="noopener noreferrer" class="underline">{{ link.label }}</a>
-			</li>
-		</ul>
-		<p class="mb-2">I am looking forward to hearing from you.</p>
-	</main>
-  </NuxtLayout>
+	<NuxtLayout>
+		<main class="container mx-auto flex-1 p-2">
+			<h1 class="mb-4">Cappic90</h1>
+			<p class="mb-2">Hey 👋, this is Malik from Germany ✌️. I currently
+				work as a full stack web developer 👨‍💻. Here are some links to
+				find out more about me and to get in touch:</p>
+			<ul class="mb-2">
+				<li v-for="link in links" :key="link.href">
+					<c-link :value="link" class="underline" />
+				</li>
+			</ul>
+			<p class="mb-2">I am looking forward to hearing from you.</p>
+		</main>
+	</NuxtLayout>
 </template>
