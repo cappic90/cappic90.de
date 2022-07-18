@@ -10,18 +10,16 @@ const links: Link[] = [
 </script>
 
 <template>
-	<NuxtLayout>
-		<main class="container mx-auto flex-1 p-2">
-			<h1 class="mb-4">Cappic90</h1>
-			<p class="mb-2">Hey 👋, this is Malik from Germany ✌️. I currently
-				work as a full stack web developer 👨‍💻. Here are some links to
-				find out more about me and to get in touch:</p>
-			<ul class="mb-2">
-				<li v-for="link in links" :key="link.href">
-					<c-link :value="link" class="underline" />
-				</li>
-			</ul>
-			<p class="mb-2">I am looking forward to hearing from you.</p>
-		</main>
-	</NuxtLayout>
+	<div>
+		<p class="mb-2">Hey 👋, this is Malik from Germany ✌️. I currently
+			work as a full stack web developer 👨‍💻.<br />
+			Here are some links to find out more about me and to get in touch:
+		</p>
+		<ul class="mb-2">
+			<li v-for="link in links" :key="link.href">
+				<c-link :value="link" class="underline" />
+			</li>
+		</ul>
+		<p class="mb-2">I am looking forward to hearing from you.</p>
+	</div>
 </template>
